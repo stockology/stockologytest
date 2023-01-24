@@ -35,7 +35,7 @@ app.use("/api/v1", user);
 app.use("/api/v1", payment);
 app.use("/api/v1", other);
 
-app.get("/", req, (res) =>
+app.get("/", (req, res) =>
   res.send(
     `<h1>Heloo Stockology <a href="${process.env.FRONTEND_URL}">Go Front end</a></h1>`
   )
