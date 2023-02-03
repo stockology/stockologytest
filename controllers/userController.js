@@ -26,8 +26,8 @@ export const register = catchAsyncError(async (req, res, next) => {
     email,
     password,
     avatar: {
-      public_id: mycloud.public_id,
-      url: mycloud.secure_url,
+      public_id:"temp",
+      url:"temp",
     },
   });
   sendToken(res, user, "Registered Successfully", 201);
